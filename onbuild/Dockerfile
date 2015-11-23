@@ -1,5 +1,5 @@
-FROM xigua/meteord-base2
-MAINTAINER xigua
+FROM iain17/meteord-base2
+MAINTAINER iain17
 
 ONBUILD COPY ./ /app
 ONBUILD RUN bash $METEORD_DIR/on_build.sh

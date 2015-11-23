@@ -1,5 +1,5 @@
-FROM xigua/meteord-base2
-MAINTAINER xigua
+FROM iain17/meteord-base2
+MAINTAINER iain17
 
 EXPOSE 80
 ENTRYPOINT bash $METEORD_DIR/run_app.sh
