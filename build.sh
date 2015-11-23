@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 cd base
-docker rmi iain17/meteord-base
-docker build -t iain17/meteord-base .
-docker push iain17/meteord-base
+docker rmi focuswebsolutions/meteord-base
+docker build -t focuswebsolutions/meteord-base .
+docker push focuswebsolutions/meteord-base
 cd ../base2/
-docker rmi iain17/meteord-base2
-docker build -t iain17/meteord-base2 .
+docker rmi focuswebsolutions/meteord-base2
+docker build -t focuswebsolutions/meteord-base2 .
 cd ../base3/
-docker build -t iain17/meteord .
+docker build -t focuswebsolutions/meteord .
 cd ../
-docker push iain17/meteord
+docker push focuswebsolutions/meteord
