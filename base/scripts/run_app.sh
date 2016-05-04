@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 set -e
 
 if [ -d /bundle ]; then
@@ -26,7 +27,7 @@ if [[ $REBULD_NPM_MODULES ]]; then
     bash /opt/meteord/rebuild_npm_modules.sh
     cd ../../
   else
-    echo "=> Use meteorhacks/meteord:bin-build for binary bulding."
+    echo "=> Use iain17/meteord:bin-build for binary bulding."
     exit 1
   fi
 fi
