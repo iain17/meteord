@@ -1,13 +1,14 @@
 FROM iain17/meteord-base
-MAINTAINER focuswebsolutions
+MAINTAINER iain17
 
 #imagemagick (general nonsense to edit images)
-RUN apt-get -y install imagemagick
+RUN apt-get -y install imagemagick apt-utils
 
 #Weasyprint (html2pdf)
 RUN apt-get -y install python-dev python-pip python-lxml libcairo2 libpango1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info
 RUN apt-get -y install libxml2-dev libxslt1-dev python-dev python-dev
-RUN apt-get -y install wget
+RUN apt-get -y install wget git python3 python3-setuptools
+RUN pip install -U pip
 RUN pip install WeasyPrint
 
 #pdf2svg
