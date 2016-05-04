@@ -1,4 +1,4 @@
-FROM focuswebsolutions/meteord-base
+FROM iain17/meteord-base
 MAINTAINER focuswebsolutions
 
 #imagemagick (general nonsense to edit images)

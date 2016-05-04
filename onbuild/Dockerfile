@@ -1,4 +1,4 @@
-FROM focuswebsolutions/meteord-base2
+FROM iain17/meteord-base2
 MAINTAINER focuswebsolutions
 
 ONBUILD COPY ./ /app
