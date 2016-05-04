@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+docker ps -a | wc -l
+
 cd base
 #docker rmi iain17/meteord-base
 docker build -t iain17/meteord-base .
